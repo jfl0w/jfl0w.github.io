@@ -12,6 +12,8 @@ Utilizing malicious Word documents (maldocs) to deliver beacon implants on infec
 
 A C2 server binary was also discovered available on GitHub, with features that allow adversaries to monitor and administer an infected endpoint, with additional capabilities to generate Rust implant payloads for Windows and Linux.
 
+![](/images/manjusaka.png)
+
 ## Distribution, Attribution, Initial Access (h2)
 
 It's important to distinguish between the developer of the malware and campaign operators. Since the C2 binary is fully functional, self contained and publicly available on GitHub, any threat actor could have downloaded it and used it in the campaign analyzed by Talos researchers. Thus, no formal attribution to any threat actors have yet been made.  
