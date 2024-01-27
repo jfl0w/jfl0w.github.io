@@ -72,7 +72,7 @@ The file management capabilities of the implant include:
 
 
 ### Indicators of Compromise
-#### Hashes (h4)
+#### Hashes 
 Maldoc and CS beacon samples
 58a212f4c53185993a8667afa0091b1acf6ed5ca4ff8efa8ce7dae784c276927
 8e7c4df8264d33e5dc9a9d739ae11a0ee6135f5a4a9e79c354121b69ea901ba6
