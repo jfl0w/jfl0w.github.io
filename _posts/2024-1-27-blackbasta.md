@@ -104,9 +104,10 @@ lalualex[.]com/ApUUBp1ccd/Ophn[.]png
 lizety[.]com/mJYvpo2xhx/Ophn[.]png
 
 ### MITRE ATT&CK® Techniques
+
 |Tactic                                   |Technique ID          |Technique Name                                                                          |
 |-----------------------------------------|----------------------|----------------------------------------------------------------------------------------|
 |Execution                                |T1059                 |Command and Scripting Interpreter                                                       |
-|Defence Evasion                          |T1112,T1027,T1562.001 |Modify Registry,Obfuscated Files or Information,Impair Defences: Disable or Modify Tools|
-|Discovery                                |T1082,T1083           |System Information Discovery,File and Directory Discovery                               |
-|Impact                                   |T1490,T1489,T1486     |Inhibit System Recovery,Service Stop,Data Encrypted for Impact                          |
+|Defence Evasion                          |T1112 T1027 T1562.001 |Modify Registry Obfuscated Files or Information Impair Defences: Disable or Modify Tools|
+|Discovery                                |T1082 T1083           |System Information Discovery File and Directory Discovery                               |
+|Impact                                   |T1490 T1489 T1486     |Inhibit System Recovery Service Stop,Data Encrypted for Impact                          |
