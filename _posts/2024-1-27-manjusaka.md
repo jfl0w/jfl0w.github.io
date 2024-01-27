@@ -4,8 +4,6 @@ title: "Manjusaka: A new RAT implant malware"
 categories: ["Threat Intel Reports"]
 ---
 
-## Manjusaka: A new RAT implant malware 
-
 Researchers with the Cisco Talos Intelligence Group have recently discovered a new family of RAT implant malware called Manjusaka being used in the wild. Advertised as an imitation of the Cobalt Strike framework, Manjusaka is a fully functional command and control (C2) framework written in GoLang with a GUI in Simplified Chinese.
 
 Utilizing malicious Word documents (maldocs) to deliver beacon implants on infected systems, Manjusaka is freely available on GitHub and allows adversaries to easily generate new implants with custom configurations, increasing the likelihood for this framework to be widely adopted by threat actors.
