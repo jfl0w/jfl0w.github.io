@@ -6,8 +6,6 @@ categories: ["Threat Intel Reports"]
 
 Trend Micro analyzed recent Black Basta ransomware group campaigns and observed it using the banking trojan QakBot to gain initial access and exploiting PrintNightmare vulnerability (CVE-2021-34527) to perform privileged file operations.
 
-![](/images/manjusaka.PNG)
-
 ## Distribution and Initial Access
 
 Black Basta has been observed using the banking trojan QakBot to gain initial access. QakBot is distributed using spear phishing emails attached with Excel files containing Excel 4.0 macros.
