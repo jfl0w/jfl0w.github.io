@@ -13,39 +13,39 @@ Black Basta has been observed using the banking trojan QakBot to gain initial ac
 Once the recipient enables macros, QakBot DLL files are downloaded onto the host system, which is then executed via regsvr32.exe.
 
 
-### Installation and Maintaining Persistence
+## Installation and Maintaining Persistence
 
 The QakBot DLL proceeds to perform process injection using explorer.exe, after which the injected process creates a scheduled task to maintain persistence.
 
 Qakbot then installs a Cobeacon, a Cobalt Strike beacon backdoor variant, establishing a named pipe for communication.
 
-### Network Discovery and Defense Evasion
+## Network Discovery and Defense Evasion
 
 After QakBot has been installed, it proceeds to download and execute Cobeacon via a fileless PowerShell script containing several layers of obfuscation:
 - It's first layer of obfuscation is a Base64-encoded PowerShell command, establishing a pipe for communication.
 - The second layer of obfuscation involves loading and reading of an archive file in memory
 - The third layer of obfuscation contains the decoded script for running the Base64-encoded shellcode
 
-### Privilege Escalation
+## Privilege Escalation
 
 In addition to OakBot and Cobeacon, Black Basta has also been observed exploiting the PrintNightmare vulnerability which targets the Windows Print Spooler Service (spoolsv.exe) to deliver its payload (spider.dll) and perform escalated
 
-### Lateral Movement
+## Lateral Movement
 
 Black Basta threat actors were observed using the Coroxy backdoor alongside the network utility tool Netcat to move laterally across the network.
 
-### Data Exfiltration
+## Data Exfiltration
 
 The Cobeacon backdoor establishes a pipe for communication which may be possibly used for data exfiltration purposes once information has been collected from a targeted system.
 The Coroxy backdoor in conjunction with netcat is also another possible communication channel.
 
-### Operational Details
+## Operational Details
 
 Once the attackers gained a wide foothold in the target network, they executed the Black Basta ransomware to encrypt files while the infected system is in safe mode, appending the encrypted files with the .basta extension. Black Basta ransomware injects into an existing Windows service and launches its decryptor executable.
 
 The ransomware then utilizes the ChaCha20 algorithm to encrypt files. Each folder on the encrypted drive contains a readme.txt file containing information about the attack and links along with a unique ID to enter a negotiation chat session with the threat actors. The wallpaper is changed to display: “Your network is encrypted by the Black Basta group.”
 
-#### Threat Actor Objectives 
+### Threat Actor Objectives 
 Black Basta ransomware group employs a double extortion scheme that involves stealing confidential data before encrypting it so they can threaten victims with the public release of the stolen data if payment is not made within seven days of the attack.
 To fulfil their extortion objectives, they release this information on their Tor website, Basta News, if the victim does not pay the ransom.
 
@@ -76,7 +76,7 @@ To fulfil their extortion objectives, they release this information on their Tor
 |433e572e880c40c7b73f9b4befbe81a5dca1185ba2b2c58b59a5a10a501d4236|Ransom.Win32.BLACKBASTA.A.note   |
 |c4683097a2615252eeddab06c54872efb14c2ee2da8997b1c73844e582081a79|PUA.Win32.Netcat.B               |
 
-#### IPs 
+### IPs 
 24[.]178[.]196[.]44:2222
 37[.]186[.]54[.]185:995
 39[.]44[.]144[.]182:995
@@ -98,12 +98,12 @@ To fulfil their extortion objectives, they release this information on their Tor
 190[.]252[.]242[.]214:443
 217[.]128[.]122[.]16:2222
 
-#### URLs 
+### URLs 
 elblogdeloscachanillas[.]com[.]mx/S3sY8RQ10/Ophn[.]png
 lalualex[.]com/ApUUBp1ccd/Ophn[.]png
 lizety[.]com/mJYvpo2xhx/Ophn[.]png
 
-#### MITRE ATT&CK® Techniques
+### MITRE ATT&CK® Techniques
 |Tactic                                   |Technique ID          |Technique Name                                                                          |
 |-----------------------------------------|----------------------|----------------------------------------------------------------------------------------|
 |Execution                                |T1059                 |Command and Scripting Interpreter                                                       |
