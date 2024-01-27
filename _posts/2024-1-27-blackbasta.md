@@ -54,13 +54,14 @@ To fulfil their extortion objectives, they release this information on their Tor
 
 
 ## Indicators of Compromise
-### Hashes       
+### Hashes
+
 |Sha256                                                          | TrendMicro Detection Signature  |
 |----------------------------------------------------------------|---------------------------------|
-|01fafd51bb42f032b08b1c30130b963843fea0493500e871d6a6a87e555c7bac|Ransom.Win32.BLACKBASTA.YXCEP    | 
-|72a48f8592d89eb53a18821a54fd791298fcc0b3fc6bf9397fd71498527e7c0e|Trojan.X97M.QAKBOT.YXCFH         |   
-|580ce8b7f5a373d5d7fbfbfef5204d18b8f9407b0c2cbf3bcae808f4d642076a|Backdoor.Win32.COROXY.YACEKT     |    
-|130af6a91aa9ecbf70456a0bee87f947bf4ddc2d2775459e3feac563007e1aed|Trojan.Win64.QUAKNIGHTMARE.YACEJT|    
+|01fafd51bb42f032b08b1c30130b963843fea0493500e871d6a6a87e555c7bac|Ransom.Win32.BLACKBASTA.YXCEP    |
+|72a48f8592d89eb53a18821a54fd791298fcc0b3fc6bf9397fd71498527e7c0e|Trojan.X97M.QAKBOT.YXCFH         |
+|580ce8b7f5a373d5d7fbfbfef5204d18b8f9407b0c2cbf3bcae808f4d642076a|Backdoor.Win32.COROXY.YACEKT     |
+|130af6a91aa9ecbf70456a0bee87f947bf4ddc2d2775459e3feac563007e1aed|Trojan.Win64.QUAKNIGHTMARE.YACEJT|
 |c7eb0facf612dbf76f5e3fe665fe0c4bfed48d94edc872952a065139720e3166|TrojanSpy.Win32.QAKBOT.YXCEEZ    |
 |ffa7f0e7a2bb0edf4b7785b99aa39c96d1fe891eb6f89a65d76a57ff04ef17ab|TrojanSpy.Win32.QAKBOT.YACEJT    |
 |2083e4c80ade0ac39365365d55b243dbac2a1b5c3a700aad383c110db073f2d9|TrojanSpy.Win32.QAKBOT.YACEJT    |
@@ -70,12 +71,12 @@ To fulfil their extortion objectives, they release this information on their Tor
 |2e890fd02c3e0d85d69c698853494c1bab381c38d5272baa2a3c2bc0387684c1|TrojanSpy.Win32.QAKBOT.YACEJT    |
 |c9df12fbfcae3ac0894c1234e376945bc8268acdc20de72c8dd16bf1fab6bb70|Ransom.Win32.BLACKBASTA.YACEJ    |
 |8882186bace198be59147bcabae6643d2a7a490ad08298a4428a8e64e24907ad|Ransom.Win32.BLACKBASTA.YACEJ    |
-|0e2b951ae07183c44416ff6fa8d7b8924348701efa75dd3cb14c708537471d27|Ransom.Win32.BLACKBASTA.YACEJ    |     
-|0d3af630c03350935a902d0cce4dc64c5cfff8012b2ffc2f4ce5040fdec524ed|Ransom.Win32.BLACKBASTA.YACEJ    |              
-|df35b45ed34eaca32cda6089acbfe638d2d1a3593d74019b6717afed90dbd5f8|Ransom.Win32.BLACKBASTA.YACEJ    |          
-|3fe73707c2042fefe56d0f277a3c91b5c943393cf42c2a4c683867d6866116fc|Ransom.Win32.BLACKBASTA.YACEJ    |  
+|0e2b951ae07183c44416ff6fa8d7b8924348701efa75dd3cb14c708537471d27|Ransom.Win32.BLACKBASTA.YACEJ    |
+|0d3af630c03350935a902d0cce4dc64c5cfff8012b2ffc2f4ce5040fdec524ed|Ransom.Win32.BLACKBASTA.YACEJ    |
+|df35b45ed34eaca32cda6089acbfe638d2d1a3593d74019b6717afed90dbd5f8|Ransom.Win32.BLACKBASTA.YACEJ    |
+|3fe73707c2042fefe56d0f277a3c91b5c943393cf42c2a4c683867d6866116fc|Ransom.Win32.BLACKBASTA.YACEJ    |
 |433e572e880c40c7b73f9b4befbe81a5dca1185ba2b2c58b59a5a10a501d4236|Ransom.Win32.BLACKBASTA.A.note   |
-|c4683097a2615252eeddab06c54872efb14c2ee2da8997b1c73844e582081a79|PUA.Win32.Netcat.B               |  
+|c4683097a2615252eeddab06c54872efb14c2ee2da8997b1c73844e582081a79|PUA.Win32.Netcat.B               |
 
 #### IPs 
 24[.]178[.]196[.]44:2222
@@ -106,8 +107,8 @@ lizety[.]com/mJYvpo2xhx/Ophn[.]png
 
 #### MITRE ATT&CK® Techniques
 |Tactic                                   |Technique ID          |Technique Name  
-|-----------------------------------------|----------------------|----------------------------------------------------------------------------------------|                       
-|Execution                                |T1059                 |Command and Scripting Interpreter                                                       |   
-|Defence Evasion                          |T1112,T1027,T1562.001 |Modify Registry,Obfuscated Files or Information,Impair Defences: Disable or Modify Tools|          
-|Discovery                                |T1082,T1083           |System Information Discovery,File and Directory Discovery                               | 
+|-----------------------------------------|----------------------|----------------------------------------------------------------------------------------|
+|Execution                                |T1059                 |Command and Scripting Interpreter                                                       |
+|Defence Evasion                          |T1112,T1027,T1562.001 |Modify Registry,Obfuscated Files or Information,Impair Defences: Disable or Modify Tools|
+|Discovery                                |T1082,T1083           |System Information Discovery,File and Directory Discovery                               |
 |Impact                                   |T1490,T1489,T1486     |Inhibit System Recovery,Service Stop,Data Encrypted for Impact                          |
