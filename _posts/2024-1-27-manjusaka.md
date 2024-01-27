@@ -18,7 +18,7 @@ It's important to distinguish between the developer of the malware and campaign 
 
 In the Manjusaka campaign observed by Talos researchers, maldocs were discovered baited with news of a COVID-19 outbreak in Golmud City (Qinghai Province) which included a detailed timeline of the supposed outbreak.
 
-### Installation and Maintaining Persistence
+## Installation and Maintaining Persistence
 
 The maldoc payload is executed in three stages:
 
@@ -29,7 +29,7 @@ The Stage 2 payload downloaded from the remote location is another shellcode tha
 In Stage 3, the Cobalt Strike beacon executable is decoded by the previous stage and then executed. The beacon can reflectively load itself into the memory of the current process.
 
 
-### Operational Details
+## Operational Details
 
 The C2 is an ELF binary file written in GoLang, while the implants are written in the Rust programming language as EXE and ELF versions, which can allow adversaries to remotely control the infected endpoint and execute arbitrary commands. 
 
@@ -69,33 +69,42 @@ The file management capabilities of the implant include:
 - Read and write data to and from the file.
 
 
-### Indicators of Compromise
-#### Hashes 
-Maldoc and CS beacon samples
+## Indicators of Compromise
+
+### Hashes 
+
+#### Maldoc and CS beacon samples
+
 58a212f4c53185993a8667afa0091b1acf6ed5ca4ff8efa8ce7dae784c276927
 8e7c4df8264d33e5dc9a9d739ae11a0ee6135f5a4a9e79c354121b69ea901ba6
 54830a7c10e9f1f439b7650607659cdbc89d02088e1ab7dd3e2afb93f86d4915
 
-Rust samples
+#### Rust samples
+
 8e9ecd282655f0afbdb6bd562832ae6db108166022eb43ede31c9d7aacbcc0d8
 a8b8d237e71d4abe959aff4517863d9f570bba1646ec4e79209ec29dda64552f
 3f3eb6fd0e844bc5dad38338b19b10851083d078feb2053ea3fe5e6651331bf2
 0b03c0f3c137dacf8b093638b474f7e662f58fef37d82b835887aca2839f529b
 
-C2 binaries
+#### C2 binaries
+
 fb5835f42d5611804aaa044150a20b13dcf595d91314ebef8cf6810407d85c64
 955e9bbcdf1cb230c5f079a08995f510a3b96224545e04c1b1f9889d57dd33c1
 
-#### IPs 
+### IPs 
 39[.]104[.]90[.]45
 
-#### URLs 
+### URLs 
 https[://]39[.]104[.]90[.]45/2WYz
+
 http[://]39[.]104[.]90[.]45/2WYz
-http[://]39[.]104[.]90[.]45/IE9CompatViewList.xml
+
+
 http[://]39[.]104[.]90[.]45/submit.php
 
 #### User Agents 
 Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)
+
 Mozilla/5.0 (Windows NT 8.0; WOW64; rv:58.0) Gecko/20120102 Firefox/58
+
 Mozilla/5.0 (Windows NT 8.0; WOW64; rv:40.0) Gecko
