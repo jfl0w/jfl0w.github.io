@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Manjusaka: A new RAT implant malware
-categories: Miscellaneous
+categories: Threat Intel Reports
 ---
 
 ## Manjusaka: A new RAT implant malware (h2)
