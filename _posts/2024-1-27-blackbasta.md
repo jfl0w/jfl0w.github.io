@@ -77,30 +77,51 @@ To fulfil their extortion objectives, they release this information on their Tor
 |c4683097a2615252eeddab06c54872efb14c2ee2da8997b1c73844e582081a79|PUA.Win32.Netcat.B               |
 
 ### IPs 
+
 24[.]178[.]196[.]44:2222
+
 37[.]186[.]54[.]185:995
+
 39[.]44[.]144[.]182:995
+
 45[.]63[.]1[.]88:443
+
 46[.]176[.]222[.]241:995
+
 47[.]23[.]89[.]126:995
+
 72[.]12[.]115[.]15:22
+
 72[.]76[.]94[.]52:443
+
 72[.]252[.]157[.]37:995
+
 72[.]252[.]157[.]212:990
+
 73[.]67[.]152[.]122:2222
+
 75[.]99[.]168[.]46:61201
+
 103[.]246[.]242[.]230:443
+
 113[.]89[.]5[.]177:995
+
 148[.]0[.]57[.]82:443
+
 167[.]86[.]165[.]191:443
+
 173[.]174[.]216[.]185:443
+
 180[.]129[.]20[.]53:995
+
 190[.]252[.]242[.]214:443
+
 217[.]128[.]122[.]16:2222
 
 ### URLs 
-elblogdeloscachanillas[.]com[.]mx/S3sY8RQ10/Ophn[.]png
-lalualex[.]com/ApUUBp1ccd/Ophn[.]png
+
+elblogdeloscachanillas[.]com[.]mx/S3sY8RQ10/Ophn[.]png 
+lalualex[.]com/ApUUBp1ccd/Ophn[.]png 
 lizety[.]com/mJYvpo2xhx/Ophn[.]png
 
 ### MITRE ATT&CK® Techniques
