@@ -104,7 +104,7 @@ lalualex[.]com/ApUUBp1ccd/Ophn[.]png
 lizety[.]com/mJYvpo2xhx/Ophn[.]png
 
 #### MITRE ATT&CK® Techniques
-|Tactic                                   |Technique ID          |Technique Name  
+|Tactic                                   |Technique ID          |Technique Name                                                                          |
 |-----------------------------------------|----------------------|----------------------------------------------------------------------------------------|
 |Execution                                |T1059                 |Command and Scripting Interpreter                                                       |
 |Defence Evasion                          |T1112,T1027,T1562.001 |Modify Registry,Obfuscated Files or Information,Impair Defences: Disable or Modify Tools|
