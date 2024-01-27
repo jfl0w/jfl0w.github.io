@@ -121,7 +121,9 @@ To fulfil their extortion objectives, they release this information on their Tor
 ### URLs 
 
 elblogdeloscachanillas[.]com[.]mx/S3sY8RQ10/Ophn[.]png 
+
 lalualex[.]com/ApUUBp1ccd/Ophn[.]png 
+
 lizety[.]com/mJYvpo2xhx/Ophn[.]png
 
 ### MITRE ATT&CK® Techniques
