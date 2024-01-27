@@ -4,7 +4,7 @@ title: Manjusaka: A new RAT implant malware
 categories: Threat Intel Reports
 ---
 
-## Manjusaka: A new RAT implant malware (h2)
+## Manjusaka: A new RAT implant malware 
 
 Researchers with the Cisco Talos Intelligence Group have recently discovered a new family of RAT implant malware called Manjusaka being used in the wild. Advertised as an imitation of the Cobalt Strike framework, Manjusaka is a fully functional command and control (C2) framework written in GoLang with a GUI in Simplified Chinese.
 
@@ -14,13 +14,13 @@ A C2 server binary was also discovered available on GitHub, with features that a
 
 ![](/images/manjusaka.png)
 
-## Distribution, Attribution, Initial Access (h2)
+## Distribution, Attribution, Initial Access
 
 It's important to distinguish between the developer of the malware and campaign operators. Since the C2 binary is fully functional, self contained and publicly available on GitHub, any threat actor could have downloaded it and used it in the campaign analyzed by Talos researchers. Thus, no formal attribution to any threat actors have yet been made.  
 
 In the Manjusaka campaign observed by Talos researchers, maldocs were discovered baited with news of a COVID-19 outbreak in Golmud City (Qinghai Province) which included a detailed timeline of the supposed outbreak.
 
-### Installation and Maintaining Persistence (h3)
+### Installation and Maintaining Persistence
 
 The maldoc payload is executed in three stages:
 
@@ -31,7 +31,7 @@ The Stage 2 payload downloaded from the remote location is another shellcode tha
 In Stage 3, the Cobalt Strike beacon executable is decoded by the previous stage and then executed. The beacon can reflectively load itself into the memory of the current process.
 
 
-### Operational Details (h3)
+### Operational Details
 
 The C2 is an ELF binary file written in GoLang, while the implants are written in the Rust programming language as EXE and ELF versions, which can allow adversaries to remotely control the infected endpoint and execute arbitrary commands. 
 
@@ -71,7 +71,7 @@ The file management capabilities of the implant include:
 - Read and write data to and from the file.
 
 
-### Indicators of Compromise (h3)
+### Indicators of Compromise
 #### Hashes (h4)
 Maldoc and CS beacon samples
 58a212f4c53185993a8667afa0091b1acf6ed5ca4ff8efa8ce7dae784c276927
@@ -88,16 +88,16 @@ C2 binaries
 fb5835f42d5611804aaa044150a20b13dcf595d91314ebef8cf6810407d85c64
 955e9bbcdf1cb230c5f079a08995f510a3b96224545e04c1b1f9889d57dd33c1
 
-#### IPs (h4)
+#### IPs 
 39[.]104[.]90[.]45
 
-#### URLs (h4)
+#### URLs 
 https[://]39[.]104[.]90[.]45/2WYz
 http[://]39[.]104[.]90[.]45/2WYz
 http[://]39[.]104[.]90[.]45/IE9CompatViewList.xml
 http[://]39[.]104[.]90[.]45/submit.php
 
-#### User Agents (h4)
+#### User Agents 
 Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)
 Mozilla/5.0 (Windows NT 8.0; WOW64; rv:58.0) Gecko/20120102 Firefox/58
 Mozilla/5.0 (Windows NT 8.0; WOW64; rv:40.0) Gecko
