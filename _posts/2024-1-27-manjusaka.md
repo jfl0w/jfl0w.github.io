@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Manjusaka A new RAT implant malware
-categories: Threat Intel Reports
+title: "Manjusaka: A new RAT implant malware"
+categories: "Threat Intel Reports"
 ---
 
 ## Manjusaka: A new RAT implant malware 
@@ -12,7 +12,7 @@ Utilizing malicious Word documents (maldocs) to deliver beacon implants on infec
 
 A C2 server binary was also discovered available on GitHub, with features that allow adversaries to monitor and administer an infected endpoint, with additional capabilities to generate Rust implant payloads for Windows and Linux.
 
-![](/images/manjusaka.png)
+![](/images/manjusaka.PNG)
 
 ## Distribution, Attribution, Initial Access
 
